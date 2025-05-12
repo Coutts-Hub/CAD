@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>3D CAD Model Viewer</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background-color: #f4f4f4;
+    }
+
+    model-viewer {
+      width: 100%;
+      max-width: 400px;
+      height: 300px;
+      margin: 0 auto;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="container">
+		<div id="mainpic">
+        	<h1>3D<span class="lightblue">CAD</span></h1>
+            <h2>Examples</h2>
+        </div>   
+        
+        <div id="menu">
+        	<ul>
+            	<li class="menuitem"><a href="index.html">Home</a></li>
+                <li class="menuitem"><a href="#">About</a></li>
+                <li class="menuitem"><a href="#">Products</a></li>
+                <li class="menuitem"><a href="cad_demo.html">Services</a></li>
+                <li class="menuitem"><a href="#">Design</a></li>
+              <li class="menuitem"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    
+  <h1>3D Model Viewer</h1>
+  <p style="text-align: center;">Below is a 3D CAD model rendered in the browser using &lt;model-viewer&gt;.</p>
+
+  <!-- Replace "models/sample.glb" with the path to your own model -->
+<model-viewer
+  src="models/GateValveAsy.glb"
+  camera-controls
+  auto-rotate
+  exposure="1.0"
+  alt="3D model"
+  reveal="auto"
+  interaction-prompt="none"
+  style="width: 100%; height: 500px;"
+  zoom-extents
+></model-viewer>
+
+
+
+
+
+
+  <p>Drag to rotate. Scroll to zoom.</p>
+</body>
+</html>
