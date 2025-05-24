@@ -92,10 +92,29 @@ body {
   background-size: contain;
 }
 
+/* fixed banner and navigation */
+#mainpic,
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Stack the menu below the banner */
+#menu {
+  top: 200px; /* Match the height of #mainpic */
+}
+
+
+
 /* Main content */
 #content {
   padding: 20px;
+  margin-top: 269px; /* Push content below fixed header + menu */
 }
+
 
 /* For general links */
 a {
