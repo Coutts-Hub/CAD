@@ -97,6 +97,32 @@ body {
   padding: 20px;
 }
 
+/* For general links */
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* For page-section navigation links */
+.nav-link {
+  font-weight: bold;
+  color: darkgreen;
+}
+
+/* For buttons as links */
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 /* Footer */
 #footer {
   text-align: center;
