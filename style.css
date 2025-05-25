@@ -153,6 +153,7 @@ a:hover {
 /* For font used in table about me */
 table {
   font-family: 'Roboto slab', serif;
+  font-size: 14px;
 }
 
 
