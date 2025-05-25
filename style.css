@@ -211,4 +211,27 @@ p {
   #container {
     padding: 0 10px;
   }
+
+  @media (max-width: 768px) {
+  /* Existing styles... */
+
+  table {
+    width: 100%;
+    font-size: 0.95rem; /* Slightly smaller, still readable */
+  }
+
+  th {
+    font-size: 1.1rem; /* Larger for readability */
+    padding: 8px;
+  }
+
+  td {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  /* Optional: wrap table to allow horizontal scroll if content overflows */
+  #content {
+    overflow-x: auto;
+  }
 }
