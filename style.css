@@ -139,8 +139,16 @@ a:hover {
   background-color: #02145c;
   color: white;
   text-decoration: none;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
 }
+
+.button-link:hover {
+  background-color: #0433a4;
+}
+
 
 /* Footer */
 #footer {
