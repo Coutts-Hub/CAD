@@ -156,6 +156,13 @@ table {
   font-size: 18px;
 }
 
+/* For font size used in table headings about me */
+table th {
+  font-size: 18px; /* or another size you prefer */
+  font-weight: bold;
+  text-align: left; /* optional: aligns header text */
+}
+
 
 /* Footer */
 #footer {
