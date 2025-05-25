@@ -229,6 +229,12 @@ p {
     font-size: 0.95rem;
     padding: 8px;
   }
+ .table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
+
+  
 
   /* Optional: wrap table to allow horizontal scroll if content overflows */
   #content {
