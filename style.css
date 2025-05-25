@@ -111,8 +111,8 @@ body {
 
 /* Main content */
 #content {
-  padding: 20px;
-  margin-top: 210px; /* Push content below fixed header + menu */
+  padding: 10px;
+  margin-top: 150px; /* Push content below fixed header + menu */
 }
 
 
