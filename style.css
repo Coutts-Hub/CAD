@@ -160,6 +160,10 @@ a:hover {
   color: #B1C6FC;
 }
 
+.greytext {
+  color: #8E8E8F;
+} 
+
 /* Paragraph alignment */
 p {
   text-align: left;
