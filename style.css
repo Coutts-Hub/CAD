@@ -150,6 +150,12 @@ a:hover {
 }
 
 
+/* For font used in table about me */
+table {
+  font-family: 'Georgia', serif;
+}
+
+
 /* Footer */
 #footer {
   text-align: center;
