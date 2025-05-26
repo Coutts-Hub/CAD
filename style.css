@@ -214,6 +214,41 @@ p {
 
   @media (max-width: 768px) {
   /* Existing styles... */
+  .responsive-table, 
+  .responsive-table thead, 
+  .responsive-table tbody, 
+  .responsive-table th, 
+  .responsive-table td, 
+  .responsive-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .responsive-table thead {
+    display: none; /* Hide table headers on small screens */
+  }
+
+  .responsive-table tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .responsive-table td {
+    text-align: left;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .responsive-table td::before {
+    content: attr(data-label); /* Grab label from td attribute */
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 45%;
+    font-weight: bold;
+    white-space: nowrap;
+  }
 
   table {
     width: 100%;
