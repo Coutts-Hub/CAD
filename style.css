@@ -23,6 +23,12 @@ body {
   background-color: white;
 }
 
+video {
+    display: block;
+    margin: 0 auto; /* Centers the video */
+    padding: 0;
+}
+
 /* === Header/Banner === */
 #mainpic {
   background-image: url(images/bannerimagecad2.png);
