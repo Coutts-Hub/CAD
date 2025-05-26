@@ -158,11 +158,13 @@ p {
   color: #0D1E68;
 }
 
-/* === Table Styling === */
+/* === Desktop Table Styling === */
 table {
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
-  width: 100%;
+  width: 700px;       /* fixed condensed width */
+  max-width: 90%;     /* responsive max-width */
+  margin: 0 auto;     /* center horizontally */
   border-collapse: collapse;
 }
 
@@ -186,6 +188,12 @@ table th {
 
 /* === Responsive Tweaks === */
 @media (max-width: 768px) {
+
+  table.responsive-table {
+    width: 100%;       /* Full width on small screens */
+    margin: 0;         /* Remove centering margin */
+  }
+  
   #mainpic h1 {
     font-size: 18px;
     top: 20px;
