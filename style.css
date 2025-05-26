@@ -198,7 +198,21 @@ table th {
   .table-wrapper {
     max-width: 100%;  /* full width wrapper */
   }
-  
+
+  /* === Responsive Image === */
+img.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+  td img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
   #mainpic h1 {
     font-size: 18px;
     top: 20px;
