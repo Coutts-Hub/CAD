@@ -159,13 +159,13 @@ p {
 }
 
 /* === Desktop Table Styling === */
-table {
-  font-family: 'Roboto Slab', serif;
-  font-size: 18px;
-  width: 700px;       /* fixed condensed width */
-  max-width: 90%;     /* responsive max-width */
+table.responsive-table {
+  width: 700px;       /* fixed width on desktop */
+  max-width: 90%;     /* allow some flexibility */
   margin: 0 auto;     /* center horizontally */
   border-collapse: collapse;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
 }
 
 table th {
@@ -184,14 +184,19 @@ table th {
 .table-wrapper {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  
+  max-width: 700px;   /* match table width */
+  margin: 0 auto;     /* center wrapper */
 }
 
 /* === Responsive Tweaks === */
 @media (max-width: 768px) {
-
   table.responsive-table {
-    width: 100%;       /* Full width on small screens */
-    margin: 0;         /* Remove centering margin */
+    width: 100%;      /* full width on mobile */
+    margin: 0;
+  }
+  .table-wrapper {
+    max-width: 100%;  /* full width wrapper */
   }
   
   #mainpic h1 {
