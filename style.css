@@ -172,7 +172,7 @@ p {
   width: 80%;
   max-width: 120px;
   text-align: center;
-  padding: 8px;
+  padding: 8px 12px;
   background-color: #02145c;
   color: white;
   text-decoration: none;
