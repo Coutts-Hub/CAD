@@ -230,7 +230,7 @@ table th {
 
 /* === Responsive Tweaks === */
 @media (max-width: 768px) {
-  .responsive-table {
+  table.responsive-table {
     width: 100%;      /* full width on mobile */
     margin: 0;
   }
