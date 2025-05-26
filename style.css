@@ -193,5 +193,27 @@ table th {
 
   #mainpic h2 {
     font-size: 14px;
+  }
+
+  #menu {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  #menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Optional: center items on mobile */
+    padding: 0;
+    margin: 0;
+  }
+
+  #menu li {
+    margin: 5px;
+  }
+}
+
+   
 
 
