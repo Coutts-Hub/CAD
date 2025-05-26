@@ -170,9 +170,9 @@ p {
 .button-link {
   display: inline-block;
   width: 90%;
-  max-width: 150px;
+  max-width: 120px;
   text-align: center;
-  padding: 10px;
+  padding: 8px;
   background-color: #02145c;
   color: white;
   text-decoration: none;
