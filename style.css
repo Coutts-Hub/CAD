@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* === Base Reset === */
 * {
   box-sizing: border-box;
 }
@@ -13,7 +13,7 @@ body {
   background: #000000 repeat-x;
 }
 
-/* Layout container */
+/* === Layout === */
 #container {
   max-width: 1200px;
   margin: 0 auto;
@@ -23,7 +23,7 @@ body {
   background-color: white;
 }
 
-/* Main banner */
+/* === Header/Banner === */
 #mainpic {
   background-image: url(images/bannerimagecad2.png);
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ body {
   color: #181052;
 }
 
-/* Navigation menu */
+/* === Navigation === */
 #menu {
   background: url(images/menu.png) no-repeat center;
   background-size: cover;
@@ -61,6 +61,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 #menu ul {
@@ -92,47 +97,33 @@ body {
   background-size: contain;
 }
 
-/* fixed banner and navigation */
-#mainpic,
-#menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-/* Stack the menu below the banner */
-#menu {
-  top: 150px; /* Match the height of #mainpic */
-}
-
-
-
-/* Main content */
+/* === Main content === */
 #content {
   padding: 10px;
-  margin-top: 200px; /* Push content below fixed header + menu */
+  margin-top: 200px; /* Below fixed header */
 }
 
-
-/* For general links */
+/* === Typography === */
 a {
   color: blue;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
-/* For page-section navigation links */
-.nav-link {
-  font-weight: bold;
-  color: darkgreen;
+p {
+  text-align: left;
 }
 
-/* For buttons as links */
+.lightblue {
+  color: #B1C6FC;
+}
+.greytext {
+  color: #8E8E8F;
+}
+
+/* === Button === */
 .button-link {
   display: inline-block;
   padding: 10px 20px;
@@ -144,32 +135,15 @@ a:hover {
   cursor: pointer;
   font-size: 14px;
 }
-
 .button-link:hover {
   background-color: #0433a4;
 }
 
-
-/* For font used in table about me */
-table {
-  font-family: 'Roboto slab', serif;
-  font-size: 18px;
-}
-
-/* For font size used in table headings about me */
-table th {
-  font-size: 18px; /* or another size you prefer */
-  font-weight: bold;
-  text-align: left; /* optional: aligns header text */
-}
-
-
-/* Footer */
+/* === Footer === */
 #footer {
   text-align: center;
   margin: 2rem auto 0 auto;
 }
-
 #footer h3 a,
 #footer h3 a:visited {
   font-size: 12px;
@@ -177,21 +151,31 @@ table th {
   color: #0D1E68;
 }
 
-/* Utility class */
-.lightblue {
-  color: #B1C6FC;
+/* === Table Styling === */
+table {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  width: 100%;
+  border-collapse: collapse;
 }
-
-.greytext {
-  color: #8E8E8F;
-} 
-
-/* Paragraph alignment */
-p {
+table th {
+  font-size: 18px;
+  font-weight: bold;
   text-align: left;
 }
+table td,
+table th {
+  padding: 8px;
+  border: 0px solid black;
+}
 
-/* Responsive tweaks */
+/* === Table Wrapper === */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* === Responsive Tweaks === */
 @media (max-width: 768px) {
   #mainpic h1 {
     font-size: 18px;
@@ -212,20 +196,18 @@ p {
     padding: 0 10px;
   }
 
-  @media (max-width: 768px) {
-  /* Existing styles... */
-  .responsive-table, 
-  .responsive-table thead, 
-  .responsive-table tbody, 
-  .responsive-table th, 
-  .responsive-table td, 
+  .responsive-table,
+  .responsive-table thead,
+  .responsive-table tbody,
+  .responsive-table th,
+  .responsive-table td,
   .responsive-table tr {
     display: block;
     width: 100%;
   }
 
   .responsive-table thead {
-    display: none; /* Hide table headers on small screens */
+    display: none; /* Hide headers on small screens */
   }
 
   .responsive-table tr {
@@ -238,10 +220,11 @@ p {
     text-align: left;
     padding-left: 50%;
     position: relative;
+    font-size: 0.95rem;
   }
 
   .responsive-table td::before {
-    content: attr(data-label); /* Grab label from td attribute */
+    content: attr(data-label);
     position: absolute;
     left: 10px;
     top: 10px;
@@ -251,28 +234,15 @@ p {
   }
 
   table {
-    width: 100%;
-    font-size: 0.95rem; /* Slightly smaller, still readable */
+    font-size: 0.95rem;
   }
 
   th {
-    font-size: 1.1rem; /* Larger for readability */
-    padding: 8px;
+    font-size: 1.1rem;
   }
 
-  td {
-    font-size: 0.95rem;
-    padding: 8px;
-  }
- .table-wrapper {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
-}
-
-  
-
-  /* Optional: wrap table to allow horizontal scroll if content overflows */
   #content {
     overflow-x: auto;
   }
 }
+
