@@ -210,10 +210,17 @@ table th {
 
   #menu {
     flex-wrap: wrap;
-    height: auto;
+    height: auto !important;
     padding: 10px 0;
+    overflow: visible;
   }
 
+  #menu a {
+  font-size: 14px;  /* smaller text */
+  padding: 6px 10px; /* less padding */
+  white-space: nowrap; /* keep each menu label on one line */
+ }
+  
   #menu ul {
     display: flex;
     flex-wrap: wrap;
