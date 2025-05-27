@@ -230,7 +230,7 @@ table th {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   
-  max-width: 700px;   /* match table width */
+  max-width: 800px;   /* match table width */
   margin: 0 auto;     /* center wrapper */
 }
 
