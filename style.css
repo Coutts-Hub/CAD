@@ -23,11 +23,18 @@ body {
   background-color: white;
 }
 
-video {
-    display: block;
-    margin: 0 auto; /* Centers the video */
-    padding: 0;
+.video-wrapper {
+  margin: 10px auto;
+  max-width: 700px;
+  text-align: center;
 }
+
+.responsive-video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 /* === Header/Banner === */
 #mainpic {
